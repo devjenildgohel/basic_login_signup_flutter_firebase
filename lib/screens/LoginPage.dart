@@ -1,5 +1,4 @@
 import 'package:basic_login_signup_firebase/screens/HomePage.dart';
-import 'package:basic_login_signup_firebase/screens/LoginPage.dart';
 import 'package:basic_login_signup_firebase/screens/SignupPage.dart';
 import 'package:basic_login_signup_firebase/validators/validations.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -57,7 +56,7 @@ class _LoginPageState extends State<LoginPage> {
     }
   }
 
-  Widget signupWidget() {
+  Widget loginWidget() {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
@@ -163,17 +162,15 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Colors.blue, Colors.purple],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-          ),
+    return Container(
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+          colors: [Colors.blue, Colors.purple],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
         ),
-        child: signupWidget(),
       ),
+      child: loginWidget(),
     );
   }
 }

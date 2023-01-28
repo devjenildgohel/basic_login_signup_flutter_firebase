@@ -23,5 +23,23 @@ class auth {
     await _firebaseAuth.signOut();
   }
 
-  
+  Future<void> verifyPhoneNumber({
+    required String phoneNumber,
+    required PhoneVerificationCompleted verificationCompleted,
+    required PhoneVerificationFailed verificationFailed,
+    required PhoneCodeSent codeSent,
+    required PhoneCodeAutoRetrievalTimeout codeAutoRetrievalTimeout,
+  }) async {
+    await _firebaseAuth.verifyPhoneNumber(
+        phoneNumber: '+91' + phoneNumber,
+        timeout: const Duration(seconds: 60),
+        verificationCompleted: verificationCompleted,
+        verificationFailed: verificationFailed,
+        codeSent: codeSent,
+        codeAutoRetrievalTimeout: codeAutoRetrievalTimeout);
+  }
+
+  Future<void> signInWithCredential(AuthCredential authCredential) async {
+    await _firebaseAuth.signInWithCredential(authCredential);
+  }
 }
