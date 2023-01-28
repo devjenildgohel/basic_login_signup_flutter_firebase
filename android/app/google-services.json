@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "641553643711",
+    "project_id": "loginsignupapp-dabb9",
+    "storage_bucket": "loginsignupapp-dabb9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:641553643711:android:2b3794d6d02f25a5e06e0a",
+        "android_client_info": {
+          "package_name": "com.example.basic_login_signup_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "641553643711-u6d9b63gtarjf3dp2c25biuvtr52uvkl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2tuyJH_PwNzl_d67j8l88Byr8jO_xIh4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "641553643711-u6d9b63gtarjf3dp2c25biuvtr52uvkl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "641553643711-4dk3h24muddab9eltu0552kscu5vra8p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.basicFirebaseLogin"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
